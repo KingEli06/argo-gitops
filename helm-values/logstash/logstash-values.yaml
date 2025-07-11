@@ -52,6 +52,7 @@ extraEnvs:
         secretKeyRef:
           name: elasticsearch-master-credentials
           key: password
+
 # Allows you to load environment variables from kubernetes secret or config map
 envFrom: []
 # - secretRef:
@@ -80,7 +81,7 @@ secretMounts:
   - name: "elasticsearch-master-certs"
     secretName: "elasticsearch-master-certs"
     path: "/usr/share/logstash/config/elasticsearch-master-certs"
-  
+
 
 hostAliases: []
 #- ip: "127.0.0.1"
