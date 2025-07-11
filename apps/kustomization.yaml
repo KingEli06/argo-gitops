@@ -1,0 +1,6 @@
+# apps/kustomization.yaml
+resources:
+- elastic-stack.yaml
+commonLabels:
+  app.kubernetes.io/part-of: elastic-stack
+  app.kubernetes.io/managed-by: argocd
